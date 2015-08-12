@@ -1,0 +1,10 @@
+<h1>Todos</h1>
+
+<div class="container">
+<form>
+{{#each model as |todo|}}
+<label><input type="checkbox" {{bind-attr "checked" todo.complete}} {{action "saveClick" todo on="change"}}>{{todo.text}}<button {{action "deleteTodo" todo}}>Delete</button></label><br>
+{{/each}}
+</form>
+{{input id="newinput" insert-newline="newTodo" value=inputValue focus-out="newTodo" placeholder="New task"}}
+</div>

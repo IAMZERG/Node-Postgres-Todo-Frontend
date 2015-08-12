@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('todos', {path: '/'});
+  this.route('todo');
 });
 
 export default Router;

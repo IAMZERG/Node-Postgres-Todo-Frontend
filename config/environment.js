@@ -38,6 +38,15 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
   }
+  ENV.contentSecurityPolicy = {  
+          'default-src': "'none'",
+          'script-src': "'self'",
+          'font-src': "'self'",
+          'connect-src': "'self' http://127.0.0.1:3000",
+          'img-src': "'self'",
+          'style-src': "'self'",
+          'media-src': "'self'"
+  };
 
   if (environment === 'production') {
 
