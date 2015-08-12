@@ -1,7 +1,8 @@
 # Postgres-todo
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a simple front-end for a todo list app that was built based on a tutorial found at http://mherman.org/blog/2015/02/12/postgresql-and-nodejs/#.VcuIFETd_0o
+
+However, instead of being a good little boy and following along with the tutorial in Angular, I decided to do it in Ember.js.
 
 ## Prerequisites
 
